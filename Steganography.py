@@ -12,7 +12,7 @@ c={}
 for i in range(255):
     d[chr(i)]=i
     c[i]=chr(i)
-x=cv2.imread(r"C:\Users\Reetika Gupta\Downloads\python3.png")
+x=cv2.imread(r"flower.jpg")
 i=x.shape[0]
 j=x.shape[1]
 print(i,j)
@@ -32,8 +32,8 @@ for i in range(1):
     m=(m+1)%3
     k1=(k1+1)%len(key)
 
-cv2.imwrite("encrypted_img.png",x)
-os.startfile("encrypted_img.png")
+cv2.imwrite("encrypted_img.jpg",x)
+os.startfile("encrypted_img.jpg")
 print("Data hiding in image completed successfully!")
 
 k1=0
